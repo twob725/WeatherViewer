@@ -1,0 +1,161 @@
+.main_content{
+  width: 90%;
+  height: 100%;
+  max-width: 840px;
+  /* min-width: 760px; */
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3px;
+  /* background-color: #d1f0cd; */
+  padding: 0px 10px;
+}
+
+.clean_room_title{
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  background-color: #ffffff
+}
+/* ICON 預留位 */
+.clean_room_title .title_img_g{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1rem;
+  padding: 5px 10px;
+}
+.clean_room_title .title_img_g .title_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+}
+/* 出入換證/開關卡 */
+.clean_room_title .title_text{
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.work_line{
+  display: flex;
+  width: 100%;
+  background-color: #eee;
+}
+.work_line .work_start, .work_line .work_end{
+  width: 50%;
+  padding: 5px 10px;
+  border: 1px solid #aaa ;
+  box-shadow: -1px -1px 6px #888 inset;
+  font-size: 1.6rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+}
+
+.user_detl{
+  display: flex;
+  width: 100%;
+  min-height: 320px;
+  margin: 5px 0px;
+  /* padding-right: 5px; */
+  /* border-radius: 5px; */
+  font-size: 0;
+  box-sizing: border-box;
+  /* border: 0.5px solid #aaa; */
+  box-shadow: -1px 0px 2px #333;
+}
+.user_detl .user_pic{
+  display: inline-block;
+  min-width: 260px;
+  width: 20%;
+  font-size: 0;
+  box-sizing: border-box;
+  background-color: #ffc;
+}
+.user_detl .user_pic img{
+  max-width: 255px;
+  border: 2px solid #333;
+  border-radius: 100%;
+}
+.user_detl .user_priv_detl{
+  display: inline-block;
+  width: 80%;
+  font-size: 0;
+  background-color: #eee;
+  box-sizing: border-box;
+  border-right: #aaa solid 1px;
+  border-left: #aaa solid 1px;
+}
+
+
+.user_priv_detl .priv_detl{
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+}
+.user_priv_detl .priv_detl .d_title{
+  width: 50%;
+  min-width: 150px;
+  padding: 5px 5px;
+  border: 0.5px solid #aaa;
+  background-color: #333;
+  font-size: 1.6rem;
+  color: #eee;
+  letter-spacing: 1px;
+}
+.user_priv_detl .priv_detl .d_content{
+  width: 50%;
+  min-width: 140px;
+  padding: 5px 5px;
+  border: 0.5px solid #aaa;
+  font-size: 1.6rem;
+}
+.priv_detl .d_content span{
+  font-size: 1.6rem;
+}
+
+.user_priv_detl .priv_detl .d_red{
+  background-color: #ba3e3c;
+}
+
+
+
+
+/* 管理者留言 */
+.admin_msg {
+  width: 100%;
+  margin-top: 20px;
+  padding: 0px 5px;
+  font-size: 2.2rem;
+  font-weight: 900;
+  background-color:#f11;
+  box-sizing: border-box;
+}
+
+
+
+
+.user_check_submit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5px 0px;
+}
+
+
+
+#bttn_submit{
+  font-size: 1.6rem;
+}
+
+
+
+
+
+
+
+

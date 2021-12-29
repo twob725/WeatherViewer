@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vendor Login</title>
+  <!-- BS4 -->
+  <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+  <!-- JQ UI -->
+  <link rel="stylesheet" href="/jquery-ui-1.12.1.custom/jquery-ui.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/local_class.css"> <!-- 通用功能CLASS -->
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="../css/font-awesome.min.css">
+  <!-- JS -->
+  <script src='/lib/jquery-3.4.1.js'></script>
+  <script src="/js/public/PublicFunction.js"></script>
+  <script src='/js/i18n/i18n.min.js'></script>
+  <script src="/js/public/config.js"></script>
+</head>
+
+
+<body>
+  <div class="header">
+    <div class="header_start d-flex">
+    </div>
+    <div class="header_middle d-flex justify-content-around align-items-center flex-wrap"></div>
+    <div class="header_icons">
+      <div class="icon_group ">
+        <a class="icon icon-bk" href="javascript: LangChange()" title="變更語言"><img src="/icon/TW.png" id="langIcon"
+            alt="" width="30"></a>
+        <!-- <a class="icon" href="#" title="登出" id="logout_btn" onclick="Logout()"><img src="/icon/acs_icon-10.png" alt="" width="30"></a> -->
+      </div>
+    </div>
+  </div>
+  <!-- content -->
+  <div class="d-flex">
+    <div class="main_content">
+      <div class="table_content" id="table_content">
+        <div class="form_title" id="title0">Login for Vendor</div>
+        <form action="javascript: SendVal()" class="form_content">
+          <div class="d-flex justify-content-start align-items-center">
+            <label for="account" id="title1">AccountName:</label>
+            <input type="text" name="account" id="account">
+          </div>
+          <div class="d-flex justify-content-start align-items-center">
+            <label for="password" id="title2">PassWord:</label>
+            <input type="password" name="password" id="password">
+          </div>
+          <div class="d-flex justify-content-center bttn_group">
+            <button type="submit" class="bttn bttn_submit bttn_submit_g d-flex">
+              <div id="bttn_submit"></div>
+              <div id="loading" class="loading"></div>
+            </button>
+            <!-- <button type="button" class="btn btn-danger" id="bttn_cancel"
+              onclick="javascript: ClearVal()">Cancel</button> -->
+          </div>
+        </form>
+        <div class=" d-flex justify-content-center">
+          <span id="login_msg" class="clr-red"></span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="dialog" class="fz-16" title="系統訊息"></div>
+
+</body>
+<!-- BS4 -->
+<script src="/bootstrap/js/bootstrap.min.js"></script>
+<script src="/bootstrap/js/popper.js"></script>
+<!-- JQ UI -->
+<script src="/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+<!-- Public JS -->
+<script src="/js/crypto-js/crypto-js.js"></script>
+<script src="/js/public/PublicFunction.js"></script>
+<script src="/js/vendor_login.js"></script>
+
+
+<link rel="stylesheet" href="/css/vendor_login.css">
+
+</html>

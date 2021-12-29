@@ -1,0 +1,31 @@
+Error: Failed to lookup view "person_visit" in views directory "D:\TSMC_ACS\ACS_iisnode\views"
+    at Function.render (D:\TSMC_ACS\ACS_iisnode\node_modules\express\lib\application.js:580:17)
+    at ServerResponse.render (D:\TSMC_ACS\ACS_iisnode\node_modules\express\lib\response.js:1012:7)
+    at D:\TSMC_ACS\ACS_iisnode\index.js:126:7
+    at Layer.handle [as handle_request] (D:\TSMC_ACS\ACS_iisnode\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\TSMC_ACS\ACS_iisnode\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\TSMC_ACS\ACS_iisnode\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\TSMC_ACS\ACS_iisnode\node_modules\express\lib\router\layer.js:95:5)
+    at D:\TSMC_ACS\ACS_iisnode\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\TSMC_ACS\ACS_iisnode\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\TSMC_ACS\ACS_iisnode\node_modules\express\lib\router\index.js:275:10)
+(node:11052) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+Error: D:\TSMC_ACS\ACS_iisnode\views\person_visit.ejs:11
+    9| </head>
+    10| 
+ >> 11| <%-include("parts /header.ejs")%>
+    12|   <script src="./js/public/Check_Role.js"></script>
+    13|   <div class="main_content">
+    14|     <div class="clearance_title">
+
+Could not find the include file "parts /header.ejs"
+    at getIncludePath (D:\TSMC_ACS\ACS_iisnode\node_modules\ejs\lib\ejs.js:183:13)
+    at includeFile (D:\TSMC_ACS\ACS_iisnode\node_modules\ejs\lib\ejs.js:309:19)
+    at include (D:\TSMC_ACS\ACS_iisnode\node_modules\ejs\lib\ejs.js:690:16)
+    at eval (eval at compile (D:\TSMC_ACS\ACS_iisnode\node_modules\ejs\lib\ejs.js:662:12), <anonymous>:10:16)
+    at person_visit (D:\TSMC_ACS\ACS_iisnode\node_modules\ejs\lib\ejs.js:692:17)
+    at tryHandleCache (D:\TSMC_ACS\ACS_iisnode\node_modules\ejs\lib\ejs.js:272:36)
+    at View.exports.renderFile [as engine] (D:\TSMC_ACS\ACS_iisnode\node_modules\ejs\lib\ejs.js:489:10)
+    at View.render (D:\TSMC_ACS\ACS_iisnode\node_modules\express\lib\view.js:135:8)
+    at tryRender (D:\TSMC_ACS\ACS_iisnode\node_modules\express\lib\application.js:640:10)
+    at Function.render (D:\TSMC_ACS\ACS_iisnode\node_modules\express\lib\application.js:592:3)

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>廠區預約及實際入廠通知</title>
+</head>
+<%-include("parts/header.ejs")%>
+<script src="./js/public/Check_Role.js"></script>
+<div class="main_content">
+  <div class="clearance_title">
+    <div class="title_img_g">
+      <img class="title_img" src="/icon/title_icon.png" alt="">
+    </div>
+    <div class="title_text" id="title1"></div>
+  </div>
+  <!-- ROW 1 -->
+  <div class="row have_border mwidth1160">
+    <div class="col-2 d-flex justify-content-end align-items-center" id="title2"></div>
+    <div class="col-3 d-flex justify-content-start align-items-center">
+      <input type="text" class="form-control" id="select" disabled>
+    </div>
+    <div class="col-2 d-flex justify-content-end align-items-center" id="title3"></div>
+    <div class="col-3 d-flex justify-content-end align-items-center">
+      <input type="text" class="form-control" id="deptId">
+    </div>
+    <div class="col-2 d-flex justify-content-end align-items-center"></div>
+  </div>
+  <!-- ROW 2 -->
+  <div class="row have_border mwidth1160">
+    <div class="col-2 d-flex justify-content-end align-items-center" id="title4"></div>
+    <div class="col-3 d-flex justify-content-start align-items-center">
+      <input type="text" class="form-control" id="receptionNo">
+    </div>
+    <div class="col-2 d-flex justify-content-end align-items-center" id="title5"></div>
+    <div class="col-3 d-flex justify-content-end align-items-center">
+      <input type="month" class="form-control" id="receptionName">
+    </div>
+    <div class="col-2 d-flex justify-content-end align-items-center"></div>
+  </div>
+  <!-- ROW 3 -->
+  <div class="row mwidth1160">
+    <div class="col-9 d-flex justify-content-end align-items-center have_border"></div>
+    <div class="col-3 d-flex justify-content-start align-items-center">
+      <button class="btn btn-primary d-flex justify-content-center align-items-center" id="bttn_submit2">
+        <div id="bttn_submit"></div>
+        <div id="loading" class="loading"></div>
+      </button>
+      <button class="btn btn-warning no_border" onclick="clear_all()" >
+        <div id="bttn_clear"></div>
+      </button>
+    </div>
+  </div>
+
+  <!-- 查詢結果 row -->
+  <div class="row bgc-white mwidth1160">
+    <div class="col-2 d-flex justify-content-center align-items-center search_down" id="result"><span id="seach_res"></span></div>
+    <div class="col"></div>
+    <div class="col-4 d-flex justify-content-end align-items-center">
+      <!-- <button class="btn btn-sm btn-dark btnfs-sm" id="title12"></button> -->
+      <button class="btn btn-sm btn-dark btnfs-sm" id="export" onclick=""></button>
+      <button class="btn btn-sm btn-dark btnfs-sm" id="printbtn" onclick=""></button>
+      <!-- <button class="btn btn-sm btn-dark btnfs-sm" id="title15"></button> -->
+    </div>
+  </div>
+  <!-- 表單 title -->
+<div class="table-responsive">
+  <table class="table table-bordered table-hover mwidth1160" id="cleanroom30_talbe">
+    <thead class="text_center bgc-orange fixTable">
+      <tr>
+        <th scope="col" id="col1"></th>
+      </tr>
+    </thead>
+    <tbody id="cleanroom30_form">
+    </tbody>
+  </table>
+</div>
+<div style="display: none;">
+  <table id="tableExport"></table>
+</div>
+<%-include("parts/table_footer.ejs")%>
+</div>
+<div id="dialog" class="fz-16" title="系統訊息">
+
+<%-include("parts/footer_js.ejs")%>
+<link rel="stylesheet" href="/css/reservation.css">
+<!--檢查是否有cookie-->
+<!-- <script src="./js/public/CHECK_Cookie.js"></script> -->
+<script src="./js/reservation.js"></script>
+</html>

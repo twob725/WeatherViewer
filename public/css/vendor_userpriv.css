@@ -1,0 +1,345 @@
+*, html{
+  font-family: 微軟正黑體;
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+}
+
+body::-webkit-scrollbar { 
+  display: none; 
+}
+.header{
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 40px;
+  background-color: #38ca38;
+  z-index: 99;
+}
+
+.header *{
+  font-size: 1.4rem;
+  /* border: 1px solid #333; */
+}
+.header .header_start{
+  justify-content: flex-end;
+  padding: 0;
+  width: 15%;
+  max-width: 15vw;
+  width: 230px;
+}
+/* < 按鈕 */
+.header .header_start .bttn_taggle{
+  width: 25px;
+  height: 25px;
+  margin: 0px 10px;
+  color: #0580B9;
+  border: 0px solid;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #eee;
+  background-color: #fff;
+  font-size: 1.6rem;
+  font-weight:bolder;
+}
+
+.header .header_start .bttn_list{
+  width: 27px;
+  height: 27px;
+  margin: 0px 10px;
+  /* color: #0580B9; */
+  border: 0px solid;
+  border-radius: 5px;
+  /* box-shadow: 0px 0px 5px #eee; */
+  /* background-color: #fff; */
+}
+.header .header_middle{
+  width: 55%;
+  max-width: 60vw;
+}
+.header .header_middle a{
+  margin: 5px;
+}
+
+
+
+
+.header .header_icons{
+  width: 45%;
+  min-width: 140px;
+  max-width: 40vw;
+}
+.header .header_icons .icon_group{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+}
+.header .header_icons .icon_group .icon{
+  display: flex;
+  margin: 0px 5px;
+  padding: 0px 3px;
+  border: 0.2rem solid rgb(0, 161, 8);
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 0.5px 0px 1px rgb(91, 124, 86);
+  /* transition-duration: 0.1s; */
+}
+.header .header_icons .icon_group .icon:hover {
+  box-shadow: 1px 0px 7px rgb(91, 124, 86);
+  border: 2px solid rgb(92, 211, 88);
+  transition-duration: 0.2s;
+}
+/* 
+.header .header_end{
+  width: 15%;
+  min-width: 160px;
+  max-width: 12vw;
+} */
+
+.user_info{
+  width: 20%;
+  min-width: 120px;
+  padding: 0;
+  color: #eee;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.user_info div{
+  margin: 0px 5px;
+}
+
+.username{
+  padding: 0;
+  color: #fff;
+}
+
+#hi{
+  color: #fff;
+}
+
+.user_info #name_href{
+  text-decoration:none;
+  color: #fff;
+  transition-duration: 0.1s;
+}
+.user_info #name_href:hover{
+  color: #333;
+  text-shadow: 0px 0px 2px #666;
+}
+  
+.header .header_end .user_info .user_photo img{
+  width: 32px;
+  height: 32px;
+  /* background-color: #fff; */
+  border: 1px solid #eee;
+  z-index: 0;
+  border-radius: 100%;
+}
+
+.main_content{
+  width: 90%;
+  height: 100%;
+  max-width: 840px;
+  /* margin: 10px 0px; */
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3px;
+  padding: 0px 10px;
+}
+
+
+.table_content *{
+  font-size: 1.4rem;
+  /* border: 1px solid #333; */
+}
+.table_content{
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+.table_content .form_title{
+  font-size: 3rem;
+  margin: 40px 0px;
+  text-align: center;
+  text-shadow: #38ca38 2px 0px 10px;
+}
+
+.form_content{
+  width: 25vw;
+  min-width: 350px;
+  height: 16vh;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 25px 40px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: #38ca38 2px 0px 10px;
+}
+.form_content:hover{
+  box-shadow: #198b19 3px 0px 20px;
+  transition-duration: 0.2s;
+}
+.form_content div label{
+  /* background-color: green; */
+  display: inline-block;
+  width: 40%;
+  min-width: 110px;
+  margin: 5px 0px;
+  text-align: justify;
+  font-weight: 900;
+}
+.form_content div input{
+  /* background-color: rgb(90, 255, 84); */
+  width: 60%;
+  min-width: 120px;
+}
+.bttn_group{
+  margin-top: 10px;
+}
+
+
+.user_check_title{
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  background-color: #ffffff
+}
+/* ICON 預留位 */
+.user_check_title .title_img_g{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1rem;
+  padding: 5px 10px;
+}
+.user_check_title .title_img_g .title_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+}
+/* 出入換證/開關卡 */
+.user_check_title .title_text{
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.work_line{
+  display: flex;
+  width: 100%;
+  padding: 5px 0px;
+  background-color: #fff;
+}
+.work_line .work_start, .work_line .work_end{
+  width: 49.5%;
+  margin: 0px 0.3%;
+  padding: 5px 10px;
+  border: 1px solid #aaa ;
+  box-shadow: 1px 0px 3px 0.5px #888;
+  font-size: 1.6rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  background-color: #eee;
+  box-sizing: border-box;
+}
+.work_line .work_start span , .work_line .work_end span {
+  color: #337eee;
+  font-size: 1.4rem;
+}
+
+.user_detl{
+  display: flex;
+  width: 100%;
+  margin-top: 3px;
+  /* padding-right: 15px; */
+  font-size: 0;
+  box-sizing: border-box;
+  
+  box-shadow: -1px 0px 2px #333;
+}
+.user_detl .user_pic{
+  display: inline-block;
+  min-width: 260px;
+  width: 20%;
+  font-size: 0;
+  box-sizing: border-box;
+}
+.user_detl .user_pic img{
+  max-width: 255px;
+  border: 2px solid #333;
+  border-radius: 100%;
+}
+.user_detl .user_priv_detl{
+  display: inline-block;
+  width: 80%;
+  font-size: 0;
+  background-color: #eee;
+  box-sizing: border-box;
+}
+
+
+.user_priv_detl .priv_detl{
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+}
+.user_priv_detl .priv_detl .d_title{
+  width: 50%;
+  min-width: 150px;
+  padding: 5px 5px;
+  border: 0.5px solid #aaa;
+  background-color: #333;
+  font-size: 1.6rem;
+  text-align: left;
+  color: #eee;
+  letter-spacing: 1px;
+}
+.user_priv_detl .priv_detl .d_content{
+  width: 50%;
+  min-width: 140px;
+  padding: 5px 5px;
+  border: 0.5px solid #aaa;
+  font-size: 1.6rem;
+}
+.user_priv_detl .priv_detl .d_content span{
+  font-size: 1.6rem;
+}
+.user_priv_detl .priv_detl .d_red{
+  background-color: #ba3e3c;
+}
+
+
+
+
+/* 管理者留言 */
+.admin_msg {
+  width: 100%;
+  margin-top: 5px;
+  padding-left: 10px;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #333;
+  background-color:#eee;
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+}
+
+
+
+.user_check_submit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5px 0px;
+}
+
+
+#bttn_submit{
+  font-size: 1.6rem;
+}
+

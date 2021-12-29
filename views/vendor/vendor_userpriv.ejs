@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vendor Login</title>
+  <!-- BS4 -->
+  <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+  <!-- JQ UI -->
+  <link rel="stylesheet" href="/jquery-ui-1.12.1.custom/jquery-ui.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/local_class.css"> <!-- 通用功能CLASS -->
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="../css/font-awesome.min.css">
+  <!-- JS -->
+  <script src='/lib/jquery-3.4.1.js'></script>
+  <script src="/js/public/PublicFunction.js"></script>
+  <script src='/js/i18n/i18n.min.js'></script>
+  <script src="/js/public/config.js"></script>
+</head>
+
+
+<body>
+  <div class="header">
+    <div class="header_start d-flex">
+    </div>
+    <div class="header_middle d-flex justify-content-around align-items-center flex-wrap"></div>
+    <!-- <div class="header_icons">
+      <div class="icon_group ">
+        <a class="icon icon-bk" href="javascript: LangChange()" title="變更語言"><img src="/icon/TW.png" id="langIcon"
+            alt="" width="30"></a>
+        <a class="icon" href="#" title="登出" id="logout_btn" onclick="Logout()"><img src="/icon/acs_icon-10.png" alt="" width="30"></a>
+      </div>
+      <div class="user_info d-inline-flex justify-content-end align-items-center">
+        <div class="username d-inline-flex align-items-center" id="hi"></div>
+      </div>
+    </div> -->
+    <div class="header_icons  d-inline-flex justify-content-end">
+      <div class="icon_group d-inline-flex justify-content-end align-items-center">
+        <a class="icon icon-bk" href="javascript: LangChange()" title="變更語言"><img src="/icon/TW.png" id="langIcon"
+          alt="" width="30"></a>
+        <!-- <a class="icon" href="#" title="登出" id="logout_btn" onclick="Logout()"><img src="/icon/acs_icon-10.png" alt="" width="30"></a> -->
+        <a class="fontawesome" href="#" title="登出" id="logout_btn" onclick="Logout()"><i class="fa fa-fw fa-sign-out" style="font-size: 30px;"></i></a>
+      </div>
+      <div class="user_info d-inline-flex justify-content-end align-items-center">
+        <div class="username d-inline-flex align-items-center text-nowrap" id="hi"></div>
+      </div>
+    </div>
+  </div>
+  <!-- content -->
+  <div class="d-flex">
+    <div class="main_content">
+      <div class="user_check_title">
+        <div class="title_img_g">
+          <img class="title_img" src="/icon/title_icon.png" alt="">
+        </div>
+        <div class="title_text" id="title1"></div>
+      </div>
+      <div class="work_line" style="display: none;">
+        <div class="work_start" id="work_start"></div>
+        <div class="work_end" id="work_end"></div>
+      </div>
+
+      <!-- 使用者基本資料 -->
+      <div class="user_detl">
+        <div class="user_pic d-flex justify-content-center align-items-center">
+          <img id="user_pic" class="" src="../user1.png" alt="">
+        </div>
+        <div class="user_priv_detl">
+          <div class="priv_detl">
+            <div class="d_title" id="title2"></div>
+            <div class="d_content">
+              <span id="cardId"></span>
+              <span id="cardName"></span>
+            </div>
+          </div>
+          <div class="priv_detl">
+            <div class="d_title" id="title3"></div>
+            <div class="d_content">
+              <span id="compId"></span>
+              <span id="compName"></span>
+            </div>
+          </div>
+          <div class="priv_detl">
+            <div class="d_title d_red" id="title4"></div>
+            <div class="d_content" id="cardNo">
+              <!-- <input type="text" id="cardNo" disabled='disabled' class="form-control"> -->
+            </div>
+          </div>
+          <div class="priv_detl">
+            <div class="d_title" id="title5"></div>
+            <div class="d_content" id="enterDate"></div>
+          </div>
+          <div class="priv_detl">
+            <div class="d_title" id="title6"></div>
+            <div class="d_content" id="enterTime"></div>
+          </div>
+          <div class="priv_detl">
+            <div class="d_title" id="title7"></div>
+            <div class="d_content" id="outDate"></div>
+          </div>
+          <div class="priv_detl">
+            <div class="d_title" id="title8"></div>
+            <div class="d_content" id="outTime"></div>
+          </div>
+
+          <div class="priv_detl">
+            <div class="d_title" id="title9"></div>
+            <div class="d_content">
+              <span id="deptIdRessign"></span>
+              <span id="deptName"></span>
+            </div>
+          </div>
+          <div class="priv_detl" style="display: none;">
+            <div class="d_title" id="title10"></div>
+            <div class="d_content" id="rSiteCode"></div>
+          </div>
+          <div class="priv_detl">
+            <div class="d_title" id="title11"></div>
+            <div class="d_content"></div>
+          </div>
+        </div>
+      </div>
+      <div class="admin_msg" id="title12"></div>
+      <div class="user_check_submit">
+        <button class="bttn bttn_submit d-flex">
+          <div id="bttn_submit"></div>
+          <div id="loading" class="loading"></div>
+        </button>
+        <button class="bttn bttn_back" id="bttn_back" onclick="BackPage()"></button>
+      </div>
+    </div>
+
+  </div>
+  <div id="dialog" class="fz-16" title="系統訊息"></div>
+</body>
+<!-- BS4 -->
+<script src="/bootstrap/js/bootstrap.min.js"></script>
+<script src="/bootstrap/js/popper.js"></script>
+<!-- JQ UI -->
+<script src="/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+<!-- Public JS -->
+<script src="/js/crypto-js/crypto-js.js"></script>
+<script src="/js/public/PublicFunction.js"></script>
+<script src="/js/vendor_userpriv.js"></script>
+
+
+<link rel="stylesheet" href="/css/vendor_userpriv.css">
+
+</html>

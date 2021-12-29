@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+
+<%-include("parts/header.ejs")%>
+<script src="./js/public/Check_Role.js"></script>
+  <div class="main_content">  
+    <div class="user_check_title">
+      <div class="title_img_g">
+        <img class="title_img" src="/icon/title_icon.png" alt="">
+      </div>
+      <div class="title_text" id="title1"></div>
+    </div>
+    <div class="work_line" id="work_line">
+      <div class="work_start" id="work_start"></div>
+      <div class="work_end" id="work_end"></div>
+    </div>
+
+    <!-- 使用者基本資料 -->
+    <div class="user_detl">
+      <div class="user_pic d-flex justify-content-center align-items-center">
+        <img id="user_pic" class="" src="user1.png" alt="">
+      </div>
+      <div class="user_priv_detl">
+        <div class="priv_detl">
+          <div class="d_title" id="title2"></div>
+          <div class="d_content">
+            <span id="cardId"></span>
+            <span id="cardName"></span>
+          </div>
+        </div>
+        <div class="priv_detl">
+          <div class="d_title" id="title3"></div>
+          <div class="d_content">
+            <span id="compId"></span>
+            <span id="compName"></span>
+          </div>
+        </div>
+        <div class="priv_detl">
+          <div class="d_title d_red" id="title4"></div>
+          <div class="d_content" id="cardNo">
+            <!-- <input type="text" id="cardNo" disabled='disabled' class="form-control"> -->
+          </div>
+        </div>
+        <div class="priv_detl">
+          <div class="d_title" id="title5"></div>
+          <div class="d_content" id="enterDate"></div>
+        </div>
+        <div class="priv_detl">
+          <div class="d_title" id="title6"></div>
+          <div class="d_content" id="enterTime"></div>
+        </div>
+        <div class="priv_detl">
+          <div class="d_title" id="title7"></div>
+          <div class="d_content" id="outDate"></div>
+        </div>
+        <div class="priv_detl">
+          <div class="d_title" id="title8"></div>
+          <div class="d_content" id="outTime"></div>
+        </div>
+
+        <div class="priv_detl">
+          <div class="d_title" id="title9"></div>
+          <div class="d_content">
+            <span id="deptIdRessign"></span>
+            <span id="deptName"></span>
+          </div>
+        </div>
+        <div class="priv_detl" style="display: none;">
+          <div class="d_title" id="title10"></div>
+          <div class="d_content" id="rSiteCode"></div>
+        </div>
+        <div class="priv_detl">
+          <div class="d_title" id="title11"></div>
+          <div class="d_content"></div>
+        </div>
+      </div>
+    </div>
+    <div class="admin_msg" id="title12"></div>
+    <div class="user_check_submit">
+      <button class="bttn bttn_submit d-flex" onclick="CHECK_USER()">
+        <div id="bttn_submit"></div>
+        <div id="loading" class="loading"></div>
+      </button>
+      <button class="bttn bttn_back" id="bttn_back"></button>
+    </div>
+  </div>
+<div id="count_time"></div>
+<div id="dialog" class="fz-16" title="系統訊息"></div>
+<%-include("parts/footer_js.ejs") %>
+<link rel="stylesheet" href="/css/user_priv.css">
+<script src="./js/public/CHECK_Cookie.js"></script><!--檢查是否有cookie-->
+<script src="./js/user_priv.js"></script>
+
+</html>

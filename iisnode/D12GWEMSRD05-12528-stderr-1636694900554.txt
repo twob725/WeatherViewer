@@ -1,0 +1,55 @@
+ReferenceError: D:\ACSWeb\ACS_iisnode\views\local.ejs:9
+    7|   <title>Redirecting...</title>
+    8| </head>
+ >> 9| <!-- <%-include("parts/header.ejs")%> -->
+    10| 
+    11| <!-- <%-include("parts/footer_js.ejs")%> -->
+    12| <link rel="stylesheet" href="/css/home.css">
+
+D:\ACSWeb\ACS_iisnode\views\parts\header.ejs:41
+    39|     </div>
+    40|   </div>
+ >> 41|   <span id="sso" style="display: none;"><%=cookie %></span>
+    42|   <!-- content -->
+    43|   <div class="d-flex">
+    44|     <div class="side_tree" id="side_tree"></div>
+
+cookie is not defined
+    at eval (eval at compile (D:\ACSWeb\ACS_iisnode\node_modules\ejs\lib\ejs.js:662:12), <anonymous>:10:25)
+    at header (D:\ACSWeb\ACS_iisnode\node_modules\ejs\lib\ejs.js:692:17)
+    at include (D:\ACSWeb\ACS_iisnode\node_modules\ejs\lib\ejs.js:690:39)
+    at eval (eval at compile (D:\ACSWeb\ACS_iisnode\node_modules\ejs\lib\ejs.js:662:12), <anonymous>:10:16)
+    at local (D:\ACSWeb\ACS_iisnode\node_modules\ejs\lib\ejs.js:692:17)
+    at tryHandleCache (D:\ACSWeb\ACS_iisnode\node_modules\ejs\lib\ejs.js:272:36)
+    at View.exports.renderFile [as engine] (D:\ACSWeb\ACS_iisnode\node_modules\ejs\lib\ejs.js:489:10)
+    at View.render (D:\ACSWeb\ACS_iisnode\node_modules\express\lib\view.js:135:8)
+    at tryRender (D:\ACSWeb\ACS_iisnode\node_modules\express\lib\application.js:640:10)
+    at Function.render (D:\ACSWeb\ACS_iisnode\node_modules\express\lib\application.js:592:3)
+(node:12528) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+ReferenceError: D:\ACSWeb\ACS_iisnode\views\local.ejs:9
+    7|   <title>Redirecting...</title>
+    8| </head>
+ >> 9| <!-- <%-include("parts/header.ejs")%> -->
+    10| 
+    11| <!-- <%-include("parts/footer_js.ejs")%> -->
+    12| <link rel="stylesheet" href="/css/home.css">
+
+D:\ACSWeb\ACS_iisnode\views\parts\header.ejs:41
+    39|     </div>
+    40|   </div>
+ >> 41|   <span id="sso" style="display: none;"><%=cookie %></span>
+    42|   <!-- content -->
+    43|   <div class="d-flex">
+    44|     <div class="side_tree" id="side_tree"></div>
+
+cookie is not defined
+    at eval (eval at compile (D:\ACSWeb\ACS_iisnode\node_modules\ejs\lib\ejs.js:662:12), <anonymous>:10:25)
+    at header (D:\ACSWeb\ACS_iisnode\node_modules\ejs\lib\ejs.js:692:17)
+    at include (D:\ACSWeb\ACS_iisnode\node_modules\ejs\lib\ejs.js:690:39)
+    at eval (eval at compile (D:\ACSWeb\ACS_iisnode\node_modules\ejs\lib\ejs.js:662:12), <anonymous>:10:16)
+    at local (D:\ACSWeb\ACS_iisnode\node_modules\ejs\lib\ejs.js:692:17)
+    at tryHandleCache (D:\ACSWeb\ACS_iisnode\node_modules\ejs\lib\ejs.js:272:36)
+    at View.exports.renderFile [as engine] (D:\ACSWeb\ACS_iisnode\node_modules\ejs\lib\ejs.js:489:10)
+    at View.render (D:\ACSWeb\ACS_iisnode\node_modules\express\lib\view.js:135:8)
+    at tryRender (D:\ACSWeb\ACS_iisnode\node_modules\express\lib\application.js:640:10)
+    at Function.render (D:\ACSWeb\ACS_iisnode\node_modules\express\lib\application.js:592:3)

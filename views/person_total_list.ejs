@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<%-include("parts/header.ejs")%>
+<script src="./js/public/Check_Role.js"></script>
+<div class="main_content">
+  <div class="clearance_title mwidth800">
+    <div class="title_img_g">
+      <img class="title_img" src="/icon/title_icon.png" alt="">
+    </div>
+    <div class="title_text" id="title1"></div>
+  </div>
+  <!-- ROW 1 -->
+  <div class="row have_border mwidth800">
+    <div class="col-1 d-flex justify-content-center align-items-center" id="title2"></div>
+    <div class="col-3 d-flex justify-content-start align-items-center">
+      <!-- <select name="rSiteCode" class="custom-select" id="select">
+        <option value="1"></option>
+        <input type="text" class="form-control" id="select" disabled>
+      </select> -->
+      <input type="text" class="form-control" id="select" disabled>
+    </div>
+    <div class="col-1 d-flex justify-content-center align-items-center" id="title3"></div>
+    <div class="col-4 d-inline-block  no_border">
+      <div class="form-check-inline">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="setting" value="1" checked><span id="title4"></span> 
+        </label>
+      </div>
+      <div class="form-check-inline">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="setting" value="2"><span id="title5"></span>
+        </label>
+      </div>        
+    </div>
+    <div class="col-3 d-flex justify-content-around align-items-center mwidth200">
+      <button class="btn btn-primary d-flex justify-content-center align-items-center no_border" id="bttn_submit2">
+        <div id="bttn_submit"></div>
+        <h1 id="loading" class="loading"></h1>
+      </button>
+      <button class="btn btn-warning no_border" onclick="clear_value()" >
+        <div id="bttn_clear"></div>
+      </button>
+    </div>
+  </div>
+  <div class="row bgc-white mwidth800">
+    <div class="col-2 d-flex justify-content-center align-items-center search_down" id="result"><span id="seach_res"></span></div>
+    <div class="col"></div>
+    <div class="col-4 d-flex justify-content-end align-items-center">
+      <!-- <button class="btn btn-sm btn-dark btnfs-sm" id="title7"></button> -->
+      <!-- <button class="btn btn-sm btn-dark btnfs-sm" id="" onclick="ChangeTest()">GOGO</button> -->
+      <button class="btn btn-sm btn-dark btnfs-sm" id="export" onclick=""></button>
+      <button class="btn btn-sm btn-dark btnfs-sm" id="printbtn" onclick=""></button>
+    </div>
+  </div>    
+  <!-- 搜尋結果表單 -->
+  <!-- 表單 title -->
+  <div class="table-responsive">
+    <table class="table table-bordered table-hover mwidth800" id="person_total_list_talbe">
+      <thead class="text_center bgc-orange fixTable" id="person_total_list_title">      
+      </thead>
+      <tbody class="" id="person_total_list_form">
+      </tbody>
+    </table>
+  </div>
+  
+  <div style="display: none;">
+    <table id="tableExport"></table>
+  </div>
+  <%-include("parts/table_footer.ejs")%>
+</div>
+<div id="dialog" class="fz-16" title="系統訊息">
+
+<%-include("parts/footer_js.ejs")%>
+<link rel="stylesheet" href="/css/person_total_list.css">
+<!--檢查是否有cookie-->
+<!-- <script src="./js/public/CHECK_Cookie.js"></script> -->
+<script src="./js/person_total_list.js"></script>
+</html>

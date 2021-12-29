@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+
+<%-include("parts/header.ejs")%>
+<script src="./js/public/Check_Role.js"></script>
+
+  <div class="main_content">
+    <div class="user_check_title">
+      <div class="title_img_g">
+        <img class="title_img" src="/icon/title_icon.png" alt="" >
+      </div>
+      <div class="title_text" id="title1"></div>
+    </div>
+    <div class="user_check_input">
+      <div class="input_title col-4 required" id="title2">
+      </div>
+      <div class="input_text ">
+        <input type="text" id="input_time" class="form-control">
+        <div id="alert_text"></div>
+      </div>
+    </div>
+    <div class="user_check_submit">
+      <button class="bttn bttn_submit d-flex" id="bttn_target" onclick="CHECK_USER()">
+        <div id="bttn_submit"></div>
+        <div id="loading" class="loading"></div>
+      </button>
+    </div>
+  </div>
+  <div id="count_time"></div>
+<div id="dialog" class="fz-16" title="系統訊息"></div>
+<%-include("parts/footer_js.ejs") %>
+<link rel="stylesheet" href="/css/user_priv_check.css">
+<script src="./js/public/CHECK_Cookie.js"></script><!--檢查是否有cookie-->
+<script src="./js/user_priv_check.js"></script>
+</html>

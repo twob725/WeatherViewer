@@ -1,0 +1,34 @@
+* {
+  font-family: '微軟正黑體', 'Helvetica Neue', Ubuntu, Cantarell, 'Open Sans', sans-serif;
+}
+
+.main_content {
+  position: relative;
+  display: inline-block;
+  width: 99vw;
+  height: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f0f0cd;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  color: #333;
+  border-radius: 15px;
+  text-shadow: 5px 2px 5px #888;
+  text-align: center;
+}
+
+.main_content span {
+  padding: 0px 5px;
+  color: #ff1010;
+}
+
+#dt_now{
+  position: absolute;
+  right: 3%;
+  bottom: 3%;
+  font-size: 1rem;
+  color: #0091ff;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px #ccc;
+}

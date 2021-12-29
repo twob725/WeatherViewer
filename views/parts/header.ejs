@@ -1,0 +1,145 @@
+<!-- BS4 -->
+<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+<!-- JQ UI -->
+<link rel="stylesheet" href="/jquery-ui-1.12.1.custom/jquery-ui.css">
+<!-- CSS -->
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/local_class.css"> <!-- 通用功能CLASS -->
+<link rel="stylesheet" href="css/footer.css">
+
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<body>
+  <div class="header">
+    <div class="header_start d-flex">
+      <div class="headerFab" id="headerFab">
+        <span></span>
+      </div>
+      <input type="image" class="bttn_taggle scale" src="icon/acs_icon-12.png" id="taggle_btn"></input>
+    </div>
+    <div class="header_middle d-flex justify-content-around align-items-center flex-wrap "></div>
+    <!-- <div class="header_icons d-flex">
+      
+    </div> -->
+    <div class="header_end d-inline-flex justify-content-end">
+      <div class="icon_group d-inline-flex justify-content-end align-items-center">
+        <a class="icon icon-bk" href="javascript: LangChange()" title="變更語言"><img src="icon/EN.png" id="langIcon" alt="" width="27" height="27"></a>
+        <!-- ACS ICON -->
+        <!-- <a class="icon" href="/home" title="首頁"><img src="icon/Home.png" alt="" width="30" height="30"></a>
+        <a class="icon" href="#" title="登出" id="logout_btn"><img src="icon/acs_icon-10.png" alt="" width="30" height="30"></a> -->
+        <!-- FONTAWESOME ICON -->
+        <a class="fontawesome" href="/home" title="首頁"><i class="fa fa-fw fa-home"></i></a>
+        <a class="fontawesome" href="#" title="登出" id="logout_btn"><i class="fa fa-fw fa-sign-out"></i></a>
+        <!-- <a class="fontawesome" href="#" title="testing1" id="a4get" style="color: crimson;"><i class="fa fa-fw fa-sign-out"></i></a> -->
+        <!-- <a class="fontawesome" href="#" title="testing2" id="a4cookie" style="color:gold;"><i class="fa fa-fw fa-sign-out"></i></a> -->
+        <!-- <a class="fontawesome" href="#" title="testing1" id="a4account" style="color:lightgoldenrodyellow;"><i class="fa fa-fw fa-sign-out"></i></a> -->
+        
+      </div>
+      <div class="user_info d-inline-flex justify-content-end align-items-center">
+        <div class="username d-inline-flex align-items-center" id="hi"></div>
+        <div class="user_photo d-flex justify-content-center">
+          <img id="userimage" src="user_none.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <span id="sso" style="display: none;"><%=cookie %></span>
+  <!-- content -->
+  <div class="d-flex">
+    <div class="side_tree" id="side_tree"></div>
+
+    <!-- JS -->
+    <script src='lib/jquery-3.4.1.js'></script>
+    <script src="./js/public/PublicFunction.js"></script>
+    <script src='./js/i18n/i18n.min.js'></script>
+    <script src="./js/public/config.js"></script>
+    <script src="./js/public/exportXLS.js"></script>
+    <script src="./js/public/TablePage.js"></script>
+    <script src="./js/public/Print.js"></script>
+    <script>
+      $('#a4get').click(()=>{
+        let dt = new Date()
+        console.log(dt.getTime())
+        console.log(`${EMSR_ip}/api/check/a4/token`)
+        $.ajax({
+          url: `${EMSR_ip}/api/check/a4/token`,
+          type: 'POST',
+          async: false,
+          cache: false,
+          dataType: 'JSON',
+          contentType: 'application/json;charset=utf-8',
+          // beforeSend: function(xhr){
+          //   xhr.withCredentials = true
+          // },
+          // xhrFields:{
+          //   withCredentials: false
+          // },
+          // crossDomain: true,
+          data: JSON.stringify({
+            A4Profile_A4SSO: $('#sso').text()
+          }),
+          // data: cook,
+          success: function (res) {
+            let a4timestamp, a4userName
+            let checkDT = dt.getTime()
+            console.log(res)
+            // a4result = true
+            // a4userName = res.data.userName
+            // a4timestamp = res.data.expiredTimestamp.slice(0, -3)
+            // checkDT = checkDT - a4timestamp
+            // if(checkDT <= 0){
+            //   console.log('【local.js】Token認證失敗，請重新登入')
+            //   redirectA4()
+            // }else{
+            //   redirectHome()
+            // }
+          },
+          error: function(xhr){
+            console.log(xhr)
+            console.log(xhr.status)
+            
+            a4result = false
+          }
+        })
+      })
+      $('#a4cookie').click(()=>{
+        console.log(`${EMSR_ip}/api/check/a4/cookie`)
+        $.ajax({
+          url: `${EMSR_ip}/api/check/a4/cookie`,
+          type: 'POST',
+          async: false,
+          dataType: 'JSON',
+          contentType: 'application/json;charset=utf-8',
+          data: JSON.stringify({
+            A4Profile_A4SSO: $('#sso').text()
+          }),
+          success: function (res) {
+            console.log(res)
+          },
+          error: function(xhr){
+            console.log(xhr)
+            console.log(xhr.status)
+          }
+        })
+      })
+      
+      $('#a4account').click(()=>{
+        console.log(`${EMSR_ip}/api/a4/token/account`)
+        $.ajax({
+          url: `${EMSR_ip}/api/a4/token/account`,
+          type: 'POST',
+          async: false,
+          dataType: 'JSON',
+          contentType: 'application/json;charset=utf-8',
+          data: JSON.stringify("CJHUANGU"),
+          success: function (res) {
+            console.log(res)
+          },
+          error: function(xhr){
+            console.log(xhr)
+            console.log(xhr.status)
+          }
+        })
+      })
+
+    </script>

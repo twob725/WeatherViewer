@@ -1,0 +1,93 @@
+
+.main_content{
+  width: 90%;
+  height: 100%;
+  max-width: 1440px;
+  min-width: 590px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 10px;
+}
+
+
+.cleanroom_title{
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  background-color: #ffffff
+}
+/* ICON 預留位 */
+.cleanroom_title .title_img_g{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1rem;
+  padding: 5px 10px;
+}
+.cleanroom_title .title_img_g .title_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+}
+/* 出入換證/開關卡 */
+.cleanroom_title .title_text{
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+
+
+.cleanroom_input{
+  display: flex;
+  width: 100%;
+}
+
+/* 請輸入駐廠人員編號.... */
+.cleanroom_input .input_title{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  min-width: 200px;
+  max-width: 350px;
+  padding: 5px 10px;
+  background-color: #333;
+  color: #eee;
+  font-size: 2.0rem;
+  font-weight: 600;
+}
+.cleanroom_input .input_title div{
+  font-size: 2.0rem;
+  color: red;
+}
+.cleanroom_input .input_text{
+  display: flex;
+  align-items: center;
+  width: 60%;
+  min-width: 230px;
+  padding: 5px 10px;
+  border: 1px solid #cccccc;
+}
+.cleanroom_input .input_text input{
+  width: 100%;
+  /* max-width: 400px; */
+  font-size: 1.4rem;
+}
+.cleanroom_submit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5px 0px;
+}
+
+
+#bttn_submit{
+  font-size: 1.6rem;
+}
+
+

@@ -1,0 +1,113 @@
+.main_content{
+  width: 100%;
+  height: 100%;
+  max-width: calc(100vw - 260px);
+  /* margin: 10px 0px; */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5px;
+}
+
+.clearance_title{
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  background-color: #ffffff
+}
+/* ICON */
+.clearance_title .title_img_g{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1rem;
+  padding: 5px 10px;
+}
+.clearance_title .title_img_g .title_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+}
+.clearance_title .title_text{
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.row{
+  margin: 0;
+  background-color: #ccc;
+}
+
+.row *{
+  /* border: 1px solid #eee; */
+  padding: 2px 5px;
+  margin: 0px 0px;
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+.col-3 .btn{
+  width: 50%;
+  padding: 3px 10px;
+  margin: 0px 5px;
+  border: 0px ;
+}
+
+.bgc-white{
+  background-color: #fff;
+}
+.bgc-orange{
+  background-color: rgb(255, 164, 60);
+}
+
+.form-check-inline, .form-check-input{
+  border: 0px solid;
+}
+
+/* 功能性CLASS */
+.tx-red::first-letter{
+  color: red;
+  font-size: 2rem;
+}
+
+.search_down{
+  background-color: #555;
+  color: #eee;
+  border-radius: 0px 20px 0px 0px;  
+}
+
+.btnfs-sm{
+  margin: 0px 1px;
+  font-size: 1.4rem;
+}
+
+.row_border_2px{
+  margin: 1px 0px;
+  border: 2px solid #333;
+  box-sizing: border-box;
+}
+.row_border *{
+  border: 1px solid #eee;
+}
+
+.no_border *{
+  border: 0px solid #eee;
+}
+.text_center *{
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+.table-responsive{
+  max-height: calc(100vh - 290px);
+}
+
+
+
+
+
+

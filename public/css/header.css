@@ -1,0 +1,210 @@
+body *{
+  /* border: 1px solid #333; */
+}
+body::-webkit-scrollbar { 
+  display: none; 
+}
+.header{
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 40px;
+  background-color: #0580B9;
+  z-index: 99;
+}
+
+.header *{
+  font-size: 1.4rem;
+  /* border: 1px solid #333; */
+}
+.header .header_start{
+  justify-content: flex-end;
+  padding: 0;
+  width: 270px;
+  min-width: 270px;
+}
+/* < 按鈕 */
+.header .header_start .bttn_taggle{
+  width: 25px;
+  height: 25px;
+  margin: 0px 10px;
+  color: #0580B9;
+  border: 0px solid;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #eee;
+  background-color: #fff;
+  font-size: 1.6rem;
+  font-weight:bolder;
+}
+
+.header .header_start .bttn_list{
+  width: 27px;
+  height: 27px;
+  margin: 0px 10px;
+  /* color: #0580B9; */
+  border: 0px solid;
+  border-radius: 5px;
+  /* box-shadow: 0px 0px 5px #eee; */
+  /* background-color: #fff; */
+}
+.header .header_middle{
+  width: 55%;
+  max-width: 60vw;
+  min-width: 400px;
+  height: 40px;
+  background-color: #0580B9;
+}
+.header .header_middle a{
+  margin: 5px;
+}
+
+
+
+
+.header .header_icons{
+  width: 7.5%;
+  min-width: 140px;
+  max-width: 7.5vw;
+}
+.header .header_end .icon_group{
+  width: 100%;
+  padding: 0;
+}
+.header .header_end .icon_group .icon{
+  display: flex;
+  width: 33px;
+  height: 26px;
+  margin: 0px 5px;
+  margin-top: 1px;
+  padding: 0px 2px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  /* transition-duration: 0.1s; */
+}
+.header .header_end .icon_group .icon-bk{
+  /* border: 1px solid #333; */
+  background-color: #fff;
+}
+.header .header_end .icon_group .icon:hover{
+  box-shadow: 1px 0px 7px #eee;
+  border: 1px solid #eee;
+  transition-duration: 0.2s;
+}
+
+.header .header_end{
+  width: 35%;
+  min-width: 160px;
+  /* max-width: 12vw; */
+  height: 40px;
+  background-color: #0580B9;
+}
+
+.header .header_end .user_info{
+  width: 30%;
+  min-width: 160px;
+  padding: 0;
+  color: #eee;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.header .header_end .user_info div{
+  margin: 0px 5px;
+}
+
+.header .header_end .user_info .username{
+  padding: 0;
+}
+.header .header_end .user_info #name_href{
+  text-decoration:none;
+  color: #fff;
+  transition-duration: 0.1s;
+}
+.header .header_end .user_info #name_href:hover{
+  color: #333;
+  text-shadow: 0px 0px 2px #666;
+}
+  
+.header .header_end .user_info .user_photo img{
+  width: 30px;
+  height: 32px;
+  /* background-color: #fff; */
+  border: 1px solid #eee;
+  z-index: 0;
+  border-radius: 100%;
+}
+
+
+/* 側邊樹狀圖 */
+.side_tree, .main_content{
+  height: calc(100vh - 40px);
+}
+
+.side_tree{
+  width: 0;
+  opacity: 0;
+  background-color: #eee;
+  transition-duration: 0.2s;
+  z-index: 99;
+}
+.side_tree .tree_list{
+  width: 100%;
+  margin: 3px 0px;
+  border-right: 5px solid #333;
+  font-size: 1.4rem;
+  font-weight: 900;
+  box-sizing: border-box;
+}
+.side_tree .tree_list *{
+}
+
+.side_tree_btn{
+  padding: 0px 10px;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.side_tree_btn:hover{
+  text-shadow: 1px 1px 3px #aaa;
+}
+
+/* 功能性CLASS */
+.open_side{
+  width: 260px;
+  min-width: 260px;
+  /* height: 90vh; */
+  opacity: 1;
+}
+
+.main_content{
+  width: 100%;
+}
+
+.scale{  /* 按鈕翻轉 */
+  transform:scaleX(-1);
+}
+
+.move_btn_right{
+  min-width: 250px;
+}
+
+.card-body{
+  background-color: #eee;
+}
+
+.headerFab{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.headerFab span{
+  border: 1px solid #eee;
+  border-radius: 10px;
+  width: 50%;
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.6rem;
+  color: white; 
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+

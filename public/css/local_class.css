@@ -1,0 +1,448 @@
+*, html {
+  font-family: 微軟正黑體;
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.bttn {
+  padding: 5px 10px;
+  border: 1px solid #333;
+  border-radius: 3px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.bttn_submit {
+  margin: 0px 10px;
+  color: #eee;
+  background-color: rgb(36, 110, 179);
+}
+
+.bttn_cancel {
+  margin: 0px 10px;
+  color: #eee;
+  background-color: rgb(221, 42, 10);
+  border: 1px solid #eee;
+}
+
+.bttn_back {
+  margin: 0px 10px;
+  color: #333;
+  background-color: #eee;
+}
+
+.bttn_submit:hover {
+  background-color: rgba(36, 110, 179, .8);
+}
+
+.bttn_cancel:hover {
+  background-color: rgba(221, 42, 10, .8);
+}
+
+.bttn_back:hover {
+  background-color: rgba(228, 228, 228, 0.8);
+}
+
+.bgc-white {
+  background-color: #fff;
+}
+
+.bgc-orange {
+  background-color: rgb(255, 164, 60);
+}
+
+.bgc-blue {
+  background-color: rgb(54, 134, 224);
+  color: #eee;
+}
+
+.bgc-green {
+  background-color: rgb(34, 180, 46);
+  color: #eee;
+}
+
+.bgc-purple {
+  background-color: purple;
+  color: #eee;
+}
+
+.text-white {
+  color: #eee;
+}
+
+.text-20 {
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+
+.form-check-inline, .form-check-input {
+  border: 0px solid;
+}
+
+.search_down {
+  background-color: #555;
+  color: #eee;
+  border-radius: 0px 20px 0px 0px;
+}
+
+.btnfs-sm {
+  margin: 0px 1px;
+  font-size: 1.4rem;
+}
+
+.row_border {
+  margin: 1px 0px;
+  border: 2px solid #333;
+  box-sizing: border-box;
+}
+
+.text_center * {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+/* Border */
+
+.have_border div {
+  border: 1px solid #eee;
+}
+
+.have_border_self {
+  border: 1px solid #eee;
+}
+
+.no_border div {
+  border: 0px;
+}
+
+/* Required */
+
+.required::before {
+  content: '*';
+  font-size: 2.0rem;
+  color: red;
+}
+
+.clr-red {
+  color: red
+}
+
+/* #dialog *{
+  font-size: 16px;
+} */
+
+.fz-16 {
+  font-size: 1.6rem;
+}
+
+/* COUNT TIME */
+
+#count_time {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  color: #ee1100;
+}
+
+/* LOADING 效果 */
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #3a3;
+  border-right: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+  margin: 0px 0px 0px 3px;
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
+  -webkit-animation: loading 1s infinite linear;
+  -moz-animation: loading 1s infinite linear;
+  -o-animation: loading 1s infinite linear;
+  animation: loading 1s infinite linear;
+}
+
+@-webkit-keyframes loading {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.loading-sm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #3a3;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  margin: 0px 0px 0px 3px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  -webkit-animation: loading 1s infinite linear;
+  -moz-animation: loading 1s infinite linear;
+  -o-animation: loading 1s infinite linear;
+  animation: loading 1s infinite linear;
+}
+
+@-webkit-keyframes loading-sm {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+/* dialog class */
+
+.dia_content {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+.dia_content * {
+  padding: 0px 10px;
+}
+
+.dia_content * {
+  font-size: 3rem;
+}
+
+.dia_content span {
+  padding: 0;
+  text-shadow: #ddd 1px 1px 3px;
+}
+
+.dia_content span.timebar {
+  font-size: 2.5rem;
+}
+
+.dia_btngroup {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 95%;
+  height: 60px;
+  /* margin-top: 10px; */
+  padding: 0px 0px 10px 0px;
+  font-size: 1.4rem;
+  /* margin: 0px 10px; */
+}
+
+.bttn_dia {
+  width: 80px;
+}
+
+.ui-widget-header {
+  background-color: rgb(8, 65, 99);
+}
+
+#ui-id-1 {
+  font-size: 1.5rem;
+  color: rgb(255, 252, 209);
+}
+
+.ui-button {
+  display: none;
+}
+
+#dialog hr {
+  width: 75%;
+}
+
+.ui-dialog-titlebar {}
+
+#bttn_submit, #bttn_clear {
+  font-size: 1.4rem;
+}
+
+.bttn80 {
+  min-width: 80px;
+}
+
+.mwidth80 {
+  min-width: 80px;
+}
+
+.mwidth150 {
+  min-width: 150px;
+}
+
+.mwidth200 {
+  min-width: 200px;
+}
+
+.mwidth240 {
+  min-width: 240px;
+}
+
+.mwidth400 {
+  min-width: 400px;
+}
+
+.mwidth450 {
+  min-width: 450px;
+}
+
+.mwidth500 {
+  min-width: 500px;
+}
+
+.mwidth600 {
+  min-width: 600px;
+}
+
+.mwidth650 {
+  min-width: 650px;
+}
+
+.mwidth710 {
+  min-width: 710px;
+  height: 40px;
+}
+
+.mwidth800 {
+  min-width: 800px;
+}
+
+.mwidth900 {
+  min-width: 900px;
+}
+
+.mwidth960 {
+  min-width: 960px;
+}
+
+.mwidth1100 {
+  /* min-width: 1100px; */
+  /* width: 90%; */
+}
+
+.xwidth960 {
+  max-width: 960px;
+}
+
+.wid60 {
+  width: 60%;
+}
+
+.wid10 {
+  width: 10%;
+}
+
+.clr-green {
+  color: rgb(68, 163, 24);
+}
+
+.clr-red {
+  color: rgb(230, 45, 45);
+}
+
+.fixTable {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.table_btn_group * {
+  font-size: 1.6rem;
+  /* border: 1px solid #333; */
+}
+.table_btn_group{
+  width: 100%;
+  height: 100%;
+  margin: 10px 0px;
+  padding: 5px 0px;
+}
+
+.outer{
+  width: 100%;
+  height: 100%;
+  margin: 4px;
+}
+
+.tablepage {
+  width: 20px;
+  height: 80%;
+  cursor: pointer;
+  padding: 2px 0px;
+  /* border: 1px solid #999; */
+  text-align: center;
+  color: #eee;
+  background-color: rgb(255, 136, 0);
+  border-radius: 12px;
+  border-right: 1px solid #CCCCCC;
+}
+
+.tablepageNotSelect {
+  color: #333;
+  background-color: #ccc;
+}
+
+.tdHover:hover{
+  background-color: rgb(255, 136, 0);
+  color: #eee;
+  transition-duration: 0.2s;
+}
+
+.td_margin{
+  width: 100%;
+  text-align: center;
+  /* margin: 0px 3px; */
+}
+
+.td_margin_right{
+  width: 100px;
+}
+
+.td_margin_end{
+  width: 150px;
+}
+
+.td_margin_sm{
+  width: 10px;
+}
+
+.align_right{
+  position: absolute;
+  right: 30px;
+}
+
+/* 列印用 */
+/* @media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+  }
+  .noBreak {
+    break-inside: avoid;
+  }
+  .noPrint {
+    display: none;
+  }
+} */
+
+
+.fontawesome{
+  font-size: 30px;
+  color: #eee;
+}
+
+.f-icon-20{
+  font-size: 19px;
+}

@@ -1,0 +1,221 @@
+*, html{
+  font-family: 微軟正黑體;
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+}
+
+body *{
+  /* border: 1px solid #333; */
+}
+body::-webkit-scrollbar { 
+  display: none; 
+}
+.header{
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 40px;
+  background-color: #38ca38;
+  z-index: 99;
+}
+
+.header *{
+  font-size: 1.4rem;
+  /* border: 1px solid #333; */
+}
+.header .header_start{
+  justify-content: flex-end;
+  padding: 0;
+  width: 15%;
+  max-width: 15vw;
+  width: 230px;
+}
+/* < 按鈕 */
+.header .header_start .bttn_taggle{
+  width: 25px;
+  height: 25px;
+  margin: 0px 10px;
+  color: #0580B9;
+  border: 0px solid;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #eee;
+  background-color: #fff;
+  font-size: 1.6rem;
+  font-weight:bolder;
+}
+
+.header .header_start .bttn_list{
+  width: 27px;
+  height: 27px;
+  margin: 0px 10px;
+  /* color: #0580B9; */
+  border: 0px solid;
+  border-radius: 5px;
+  /* box-shadow: 0px 0px 5px #eee; */
+  /* background-color: #fff; */
+}
+.header .header_middle{
+  width: 55%;
+  max-width: 60vw;
+}
+.header .header_middle a{
+  margin: 5px;
+}
+
+
+
+
+.header .header_icons{
+  width: 25%;
+  min-width: 140px;
+  max-width: 25vw;
+}
+.header .header_icons .icon_group{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+}
+.header .header_icons .icon_group .icon{
+  display: flex;
+  margin: 0px 5px;
+  padding: 0px 3px;
+  border: 0.2rem solid rgb(0, 161, 8);
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 0.5px 0px 1px rgb(91, 124, 86);
+  /* transition-duration: 0.1s; */
+}
+.header .header_icons .icon_group .icon:hover {
+  box-shadow: 1px 0px 7px rgb(91, 124, 86);
+  border: 2px solid rgb(92, 211, 88);
+  transition-duration: 0.2s;
+}
+
+.header .header_end{
+  width: 15%;
+  min-width: 160px;
+  max-width: 12vw;
+}
+
+.header .header_end .user_info{
+  width: 100%;
+  padding: 0;
+  color: #eee;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.header .header_end .user_info div{
+  margin: 0px 5px;
+}
+
+.header .header_end .user_info .username{
+  padding: 0;
+}
+.header .header_end .user_info #name_href{
+  text-decoration:none;
+  color: #fff;
+  transition-duration: 0.1s;
+}
+.header .header_end .user_info #name_href:hover{
+  color: #333;
+  text-shadow: 0px 0px 2px #666;
+}
+  
+.header .header_end .user_info .user_photo img{
+  width: 32px;
+  height: 32px;
+  /* background-color: #fff; */
+  border: 1px solid #eee;
+  z-index: 0;
+  border-radius: 100%;
+}
+
+.main_content{
+  width: 100%;
+  /* height: 100%; */
+  max-width: 1800px;
+  /* margin: 10px 0px; */
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* padding: 0px 10px; */
+  /* background-image: url("/home_page.png"); */
+}
+.main_content *{
+  /* border: 1px solid #333; */
+}
+
+
+.table_content *{
+  font-size: 1.4rem;
+  /* border: 1px solid #333; */
+}
+.table_content{
+  width: 100vw;
+  height: 93.5vh;
+  display: inline-block;
+  padding-top: 15vh;
+  border-bottom: 20px solid #38ca38;
+}
+.table_content .form_title{
+  font-size: 3rem;
+  margin: 15px 0px;
+  text-align: center;
+  /* text-shadow: #38ca38 2px 0px 10px; */
+}
+
+.form_content{
+  width: 25vw;
+  min-width: 350px;
+  height: 16vh;
+  min-height: 150px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 25px 25px 25px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  /* box-shadow: #38ca38 1px 0px 5px; */
+  background-color: rgb(248, 244, 232);
+}
+.form_content:hover{
+  box-shadow: #198b19 2px 0px 8px;
+  transition-duration: 0.2s;
+}
+.form_hover{
+  box-shadow: #198b19 2px 0px 8px;
+  transition-duration: 0.2s;
+}
+.form_content div label{
+  /* background-color: green; */
+  display: inline-block;
+  width: 40%;
+  min-width: 60px;
+  max-width: 110px;
+  margin: 5px 0px;
+  text-align:center;
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+.form_content div input{
+  /* background-color: rgb(90, 255, 84); */
+  width: 60%;
+  min-width: 120px;
+  margin: 0px 40px 0px 0px;
+}
+.bttn_group{
+  width: 100%;
+  /* padding-right: 40px; */
+  margin-top: 10px;
+}
+.bttn_submit_g{
+  /* display: flex; */
+  /* width: 40%; */
+  /* height: 25px; */
+}
+#bttn_submit, #bttn_cancel{
+  /* width: 100%; */
+  /* font-size: 1.4rem; */
+  min-width: 80px;
+}

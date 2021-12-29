@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+
+<%-include("parts/header.ejs")%>
+<script src="./js/public/Check_Role.js"></script>
+
+  <div class="main_content">
+    <div class="clearance_title">
+      <div class="title_img_g">
+        <img class="title_img" src="/icon/title_icon.png" alt="">
+      </div>
+      <div class="title_text" id="title1"></div>
+    </div>
+    <!-- ROW 1 -->
+    <div class="row have_border ">
+      <div class="col-2 d-flex justify-content-end align-items-center" id="title2"></div>
+      <div class="col-3 d-flex justify-content-start align-items-center">
+        <!-- <select name="" class="custom-select" id="select">
+          <option value="1"></option>
+        </select> -->
+        <input type="text" class="form-control" id="select" disabled>
+      </div>
+      <!-- <div class="col-1 d-flex justify-content-end align-items-center mwidth80" id="title3"></div>
+      <div class="col-3 d-flex justify-content-start align-items-center no_border">
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="setting" checked disabled><span id="title4"></span>
+          </label>
+        </div>
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="setting" disabled><span id="title5"></span>
+          </label>
+        </div>        
+      </div> -->
+      <div class="col-7">
+      </div>
+    </div>
+    <!-- ROW 2 -->
+    <div class="row ">
+      <div class="col-2 d-flex justify-content-end align-items-center required have_border_self" id="title6"></div>
+      <div class="col-3 d-flex justify-content-start align-items-center have_border_self">
+        <input type="text" class="form-control" id="clearanceName">
+      </div>
+      <div class="col-1 d-flex justify-content-end align-items-center required mwidth80 have_border_self" id="title7"></div>
+      <div class="col-3 d-flex justify-content-start align-items-center have_border_self">
+        <input type="text" class="form-control" id="groupName">
+      </div>
+      <div class="col-3 d-flex justify-content-start align-items-center have_border_self">
+        <button class="btn btn-primary d-flex justify-content-center align-items-center no_border" id="bttn_submit2">
+          <div id="bttn_submit"></div>
+          <h1 id="loading" class="loading"></h1>
+        </button>
+        <button class="btn btn-warning no_border" onclick="clear_all()" >
+          <div id="bttn_clear"></div>
+        </button>
+      </div>
+    </div>
+    <div class="row bgc-white ">
+      <div class="col-2 d-flex justify-content-center align-items-center search_down" id="result"><span id="seach_res"></span></div>
+      <div class="col"></div>
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <!-- <button class="btn btn-sm btn-dark btnfs-sm" id="title9"></button> -->
+        <button class="btn btn-sm btn-dark btnfs-sm" id="export" onclick=""></button>
+        <button class="btn btn-sm btn-dark btnfs-sm" id="printbtn" onclick=""></button>
+      </div>
+    </div>    
+    <!-- 搜尋結果表單 -->
+    <!-- 表單 title -->
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover" id="clearance_talbe">
+        <thead class="text_center bgc-orange fixTable">
+          <tr>
+            <th scope="col" id="title12"></th>
+            <!-- <th scope="col" id="title13"></th> -->
+            <th scope="col" id="title14"></th>
+            <th scope="col" id="title15"></th>
+          </tr>
+        </thead>
+        <tbody class="" id="clearance_form">
+        </tbody>
+      </table>
+    </div>
+    
+    <div style="display: none;">
+      <table id="tableExport"></table>
+    </div>
+    <%-include("parts/table_footer.ejs")%>
+  </div>
+<div id="dialog" class="fz-16" title="系統訊息">
+<%-include("parts/footer_js.ejs")%>
+<link rel="stylesheet" href="/css/clearance.css">
+<!--檢查是否有cookie-->
+<!-- <script src="./js/public/CHECK_Cookie.js"></script> -->
+<script src="./js/clearance.js"></script>
+</html>

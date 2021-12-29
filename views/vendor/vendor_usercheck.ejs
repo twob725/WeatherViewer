@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vendor Login</title>
+  <!-- BS4 -->
+  <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+  <!-- JQ UI -->
+  <link rel="stylesheet" href="/jquery-ui-1.12.1.custom/jquery-ui.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/local_class.css"> <!-- 通用功能CLASS -->
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="../css/font-awesome.min.css">
+  <!-- JS -->
+  <script src='/lib/jquery-3.4.1.js'></script>
+  <script src="/js/public/PublicFunction.js"></script>
+  <script src='/js/i18n/i18n.min.js'></script>
+  <script src="/js/public/config.js"></script>
+</head>
+
+
+<body>
+  <div class="header">
+    <div class="header_start d-flex">
+    </div>
+    <div class="header_middle d-flex justify-content-around align-items-center flex-wrap"></div>
+    <div class="header_icons  d-inline-flex justify-content-end">
+      <div class="icon_group d-inline-flex justify-content-end align-items-center">
+        <a class="icon icon-bk" href="javascript: LangChange()" title="變更語言"><img src="/icon/TW.png" id="langIcon"
+          alt="" width="30"></a>
+        <!-- <a class="icon" href="#" title="登出" id="logout_btn" onclick="Logout()"><img src="/icon/acs_icon-10.png" alt="" width="30"></a> -->
+        <a class="fontawesome" href="#" title="登出" id="logout_btn" onclick="Logout()"><i class="fa fa-fw fa-sign-out" style="font-size: 30px;"></i></a>
+      </div>
+      <div class="user_info d-inline-flex justify-content-end align-items-center">
+        <div class="username d-inline-flex align-items-center text-nowrap" id="hi"></div>
+      </div>
+    </div>
+  </div>
+  <!-- content -->
+  <div class="d-flex">
+    <div class="main_content">
+      <div class="user_check_title">
+        <div class="title_img_g">
+          <img class="title_img" src="/icon/title_icon.png" alt="" >
+        </div>
+        <div class="title_text" id="title1"></div>
+      </div>
+      <div class="user_check_input">
+        <div class="input_title col-4 required" id="title2">
+        </div>
+        <div class="input_text col-6">
+          <input type="text" id="input_time" class="form-control">
+          <div id="alert_text"></div>
+        </div>
+      </div>
+      <div class="user_check_submit">
+        <button class="bttn bttn_submit d-flex" id="bttn_target">
+          <div id="bttn_submit"></div>
+          <div id="loading" class="loading"></div>
+        </button>
+      </div>
+    </div>
+
+  </div>
+  <div id="dialog" class="fz-16" title="系統訊息"></div>
+</body>
+<!-- BS4 -->
+<script src="/bootstrap/js/bootstrap.min.js"></script>
+<script src="/bootstrap/js/popper.js"></script>
+<!-- JQ UI -->
+<script src="/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+<!-- Public JS -->
+<script src="/js/crypto-js/crypto-js.js"></script>
+<script src="/js/public/PublicFunction.js"></script>
+<script src="/js/vendor_usercheck.js"></script>
+
+
+<link rel="stylesheet" href="/css/vendor_usercheck.css">
+
+</html>
